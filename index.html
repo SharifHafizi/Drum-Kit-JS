@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drumkit</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        text-align: center;
+        background: #283149;
+        color: #ffa;
+      }
+      h1 {
+        font-size: 5rem;
+        text-shadow: 1.5px 1px pink;
+      }
+      .drum {
+        outline: none;
+        border: 10px solid #404b69;
+        font-size: 5rem;
+        line-height: 2;
+        font-weight: 900;
+        color: #da0463;
+        text-shadow: 3px 0 #dbedf3;
+        border-radius: 15px;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        margin: 10px;
+        background-color: white;
+      }
+      .drum:hover {
+        border-color: #840;
+      }
+      .a {
+        background-image: url("./img/drum.jpg");
+      }
+      .s {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .d {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .f {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .g {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .h {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .j {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .k {
+        background-image: url("./img/drum kit.jpg");
+      }
+      .pressed {
+        box-shadow: 0 3px 4px 0 #dbedf3;
+        opacity: 0.6;
+        border-color: red;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Drum Kit</h1>
+    <div class="set">
+      <button id="1" data-keyCode="65" class="a drum">a</button>
+      <button id="2" data-keyCode="83" class="s drum">s</button>
+      <button id="3" data-keyCode="68" class="d drum">d</button>
+      <button id="4" data-keyCode="70" class="f drum">f</button>
+      <button id="5" data-keyCode="71" class="g drum">g</button>
+      <button id="6" data-keyCode="72" class="h drum">h</button>
+      <button id="7" data-keyCode="74" class="j drum">j</button>
+      <button id="8" data-keyCode="75" class="k drum">k</button>
+    </div>
+    <audio data-keyCode="83" src="./sounds/hihat.wav"></audio>
+    <audio data-keyCode="68" src="./sounds/kick.wav"></audio>
+    <audio data-keyCode="65" src="./sounds/clap.wav"></audio>
+    <audio data-keyCode="70" src="./sounds/openhat.wav"></audio>
+    <audio data-keyCode="71" src="./sounds/ride.wav"></audio>
+    <audio data-keyCode="72" src="./sounds/snare.wav"></audio>
+    <audio data-keyCode="74" src="./sounds/tink.wav"></audio>
+    <audio data-keyCode="75" src="./sounds/tom.wav"></audio>
+    <script src="src/index.js"></script>
+  </body>
+</html>
